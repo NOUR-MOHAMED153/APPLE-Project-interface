@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header #logo{
+    margin: 15px 5%;
+    width: 50px;
+    height: 50px;
+}
+header ul{
+    color: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-right: 10%;
+}
+header ul a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px;
+    transition: .5s;
+}
+
+header ul a:hover , .active, .content a{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+.content a{
+    padding: 10px;
+    text-decoration: none;
+}
+.content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.content #phoneimg{
+    width: 20%;
+    margin-right: 80px;
+    animation-name: phoneimg;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear ;
+}
+@keyframes phoneimg{
+    0%{
+        translate: 0 0;
+    }
+    50%{
+        translate: 0 15px;
+    }
+    100%{
+        translate: 0 0;
+    }
+}
+.content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.content p{
+    color: #fff;
+    font-size: 20px;
+    margin: 30px;
+}
+.content .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.content a{
+    margin-left: 30px;
+    width: 20%;
+    font-weight: 600;
+}
+.icons img{
+    width: 40px;
+    cursor: pointer;
+    transition: .5s;
+}
+.icons{
+    position: absolute;
+    bottom:25px;
+    
+}
+.icons img:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+
